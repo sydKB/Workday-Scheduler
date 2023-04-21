@@ -2,102 +2,106 @@
 
 ## Completed Application
 ### https://sydkb.github.io/Workday-Scheduler/
+
+The link takes the user to a workday scheduler, as shown in the image below, with time blocks from 10 AM to 10 PM. Past hours will have a grey background, the current hour will be red, and future hours green. To add text to a certain hour, simply click the colored background and input what must be done in that hour. Then, click the corresponding "SAVE" button for that hour to save your information in local storage. Your schedule will stay on the screen after reloading. 
+
 ![deployed application example](assets/deployed-site.jpg)
 
-## Your Task
+<details>
+  <summary>Click to see grading expectations</summary>
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+  ## Your Task
+  Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+  You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-## User Story
+  ## User Story
+  ```md
+  AS AN employee with a busy schedule
+  I WANT to add important events to a daily planner
+  SO THAT I can manage my time effectively
+  ```
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+  ## Acceptance Criteria
+  ```md
+  GIVEN I am using a daily planner to create a schedule
+  WHEN I open the planner
+  THEN the current day is displayed at the top of the calendar
+  WHEN I scroll down
+  THEN I am presented with timeblocks for standard business hours
+  WHEN I view the timeblocks for that day
+  THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+  WHEN I click into a timeblock
+  THEN I can enter an event
+  WHEN I click the save button for that timeblock
+  THEN the text for that event is saved in local storage
+  WHEN I refresh the page
+  THEN the saved events persist
+  ```
 
-## Acceptance Criteria
+  The following animation demonstrates the application's expected  functionality:
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+  ![A user clicks on slots on the color-coded calendar and edits the events.](assets/05-third-party-apis-homework-demo.gif)
+    
+  ## Grading Requirements
 
-The following animation demonstrates the application functionality:
+  > **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+  >
+  > * A repository that has no code
+  >
+  > * A repository that includes a unique name but nothing else
+  >
+  > * A repository that includes only a README file but nothing else
+  >
+  > * A repository that only includes starter code
 
-![A user clicks on slots on the color-coded calendar and edits the events.](assets/05-third-party-apis-homework-demo.gif)
+  This Challenge is graded based on the following criteria: 
 
+  ### Technical Acceptance Criteria: 40%
 
-## Grading Requirements
+  * Satisfies all of the above acceptance criteria plus the following:
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+    * Uses a date utility library to work with date and time
 
-This Challenge is graded based on the following criteria: 
+  ### Deployment: 32%
 
-### Technical Acceptance Criteria: 40%
+  * Application deployed at live URL
 
-* Satisfies all of the above acceptance criteria plus the following:
+  * Application loads with no errors
 
-  * Uses a date utility library to work with date and time
+  * Application GitHub URL submitted
 
-### Deployment: 32%
+  * GitHub repo contains application code
 
-* Application deployed at live URL
+  ### Application Quality: 15%
 
-* Application loads with no errors
+  * Application user experience is intuitive and easy to navigate
 
-* Application GitHub URL submitted
+  * Application user interface style is clean and polished
 
-* GitHub repo contains application code
+  * Application resembles the mock-up functionality provided in the Challenge instructions
 
-### Application Quality: 15%
+  ### Repository Quality: 13%
 
-* Application user experience is intuitive and easy to navigate
+  * Repository has a unique name
 
-* Application user interface style is clean and polished
+  * Repository follows best practices for file structure and naming conventions
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
+  * Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-### Repository Quality: 13%
+  * Repository contains multiple descriptive commit messages
 
-* Repository has a unique name
+  * Repository contains quality README file with description, screenshot, and link to deployed application
 
-* Repository follows best practices for file structure and naming conventions
+  ## Review
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+  You are required to submit the following for review:
 
-* Repository contains multiple descriptive commit messages
+  * The URL of the deployed application
 
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
+  * The URL of the GitHub repository, with a unique name and a README describing the project
+  
+</details>
 
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
