@@ -1,5 +1,9 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+## Completed Application
+### https://sydkb.github.io/Workday-Scheduler/
+![deployed application example](assets/deployed-site.jpg)
+
 ## Your Task
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
@@ -34,7 +38,7 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](assets/05-third-party-apis-homework-demo.gif)
 
 
 ## Grading Requirements
