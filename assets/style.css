@@ -2,21 +2,19 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  color: black;
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -33,13 +31,13 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  border: 1px dashed black; 
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-top: 30px;
 }
 
 .past {
@@ -67,11 +65,14 @@ textarea {
   color: white;
 }
 
-.saveBtn:hover {
+/*"SAVE" button slightly changes color 
+and word gets bigger upon hover*/
+.saveBtn:hover { 
   background-color: #0fbcdf;
   font-size: 20px;
 }
 
+/* divides the text section hours with black lines*/
 .col-8 {
   border-top: 1px solid;
 }
