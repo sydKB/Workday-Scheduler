@@ -1,9 +1,8 @@
-var eventsData;
-
+// shows current date in correct format
 $("#currentDay").text(dayjs().format("dddd, MMMM DD"));
 
-
-function setHourColors() {
+//changes hourly background color based on current time by adding classes
+function setHourColors() { 
     var now = dayjs();
     for (var i = 10; i < 24; i++) {
         if (i < now.hour()) {
@@ -16,24 +15,17 @@ function setHourColors() {
     }
 }
 
-function loadStoredData() {
+// loads, or gets, text from local storage for each hour
+function loadStoredData() { 
     for (var i = 10; i < 24; i++) {
         var hourText = "hour" + i + "text";
         eventsData = JSON.parse(localStorage.getItem(hourText));
 
         $("#hour-" + i + " textarea").text(eventsData);
     }
-    
-    // if (!eventsData) {
-    //     eventsData = {
-    //         hour10: "",
-    //         hour11: "",
-    //         hour12: "",
-    //         //etc
-    //     };
-    // }
 }
 
+// stores, or sets, text in local storage
 function handleSaveClick(event) {
     eventsData = {
                     hour10: "",
@@ -51,24 +43,24 @@ function handleSaveClick(event) {
                     hour22: "",
                 };
 
-    //grabs HTML data
+    // grabs HTML data 
     var hourBlock = $(event.target).parent();
     var text = hourBlock.children("textarea").val();
     var hour = hourBlock.attr("id").split("-")[1];
 
-    //mod data obj 
+    // edits the text of the eventsData object at the clicked hour 
     var hourSaved = "hour" + hour;
     eventsData.hourSaved = text;
-    console.log("i typed: " + text);
 
-    //store this hour's data in local
+    // stores this hour's data in local storage with custom hour title
     hourText = "hour" + hour + "text"
     localStorage.setItem(hourText, JSON.stringify(eventsData.hourSaved));
-    //localStorage.setItem("textarea", text);
 }
 
+// when a saveBtn is clicked, it is handled, which means the text is stored locally
 $(".saveBtn").on("click", handleSaveClick)
 
+// calls functions to show local data and change hour colors
 $(function() {
     loadStoredData();
     setHourColors();
